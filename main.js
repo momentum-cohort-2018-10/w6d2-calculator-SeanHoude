@@ -1,3 +1,5 @@
+/* globals $, jQuery */
+
 function select(selector) { return document.querySelector(selector)}
 function all(selector) { return document.querySelectorAll(selector)}
 
@@ -18,14 +20,14 @@ for (let element of buttons) {
 
 for (let element of operators) {
     element.addEventListener("click", function(event) {
-        display.innerHTML += (' ' + event.target.innerHTML + ' ')
+        display.innerHTML += ` ${event.target.innerHTML} `
     })
 }
 
 function calculateFunc() {
     try {
         item = document.createElement('li')
-        item.innerHTML = display.innerHTML + ' = '
+        item.innerHTML = `${display.innerHTML} = `
         display.innerHTML = math.eval(display.innerHTML)
         item.innerHTML += display.innerHTML
         history.insertBefore(item, history.firstChild)
