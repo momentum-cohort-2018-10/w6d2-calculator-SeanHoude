@@ -1,11 +1,14 @@
-let buttons = document.querySelectorAll('.click')
-let display = document.querySelector('#display')
-let calc = document.querySelector('#calculate')
-let clear = document.querySelector('#clear-display')
-let operators = document.querySelectorAll('.operator')
-let decimal = document.querySelector('#decimal')
-let history = document.querySelector('#history')
-let zero = document.querySelector('#zero')
+function select(selector) { return document.querySelector(selector)}
+function all(selector) { return document.querySelectorAll(selector)}
+
+let buttons = all('.click')
+let display = select('#display')
+let calc = select('#calculate')
+let clear = select('#clear-display')
+let operators = all('.operator')
+let decimal = select('#decimal')
+let history = select('#history')
+let zero = select('#zero')
 
 for (let element of buttons) {
     element.addEventListener("click", function(event) {
