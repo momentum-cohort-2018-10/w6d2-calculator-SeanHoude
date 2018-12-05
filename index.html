@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css" integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>JavaScript Calculator!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-x">
+            <div class="cell square small-3" id="clear-display">C</div>
+            <div class="cell auto" id="display"></div>
+        </div>
+        <div class="grid-x">
+            <div class="cell square small-3 click">7</div>
+            <div class="cell square small-3 click">8</div>
+            <div class="cell square small-3 click">9</div>
+            <div class="cell square small-3 operator">+</div>
+        </div>
+        <div class="grid-x">
+            <div class="cell square small-3 click">4</div>
+            <div class="cell square small-3 click">5</div>
+            <div class="cell square small-3 click">6</div>
+            <div class="cell square small-3 operator">-</div>
+        </div>
+        <div class="grid-x">
+            <div class="cell square small-3 click">1</div>
+            <div class="cell square small-3 click">2</div>
+            <div class="cell square small-3 click">3</div>
+            <div class="cell square small-3 operator">*</div>
+        </div>
+        <div class="grid-x">
+            <div class="cell square small-3 operator">%</div>
+            <div class="cell auto" id="zero">0</div>
+            <div class="cell square small-3" id="decimal">.</div>
+            <div class="cell square small-3 operator">/</div>
+
+        </div>
+        <div class="grid-x">
+            <div class="cell square small-3 operator">(</div>
+            <div class="cell square small-3 operator">)</div>
+            <div class="cell square small-3 operator">^</div>
+            <div class="cell square small-3" id="calculate">=</div>
+        </div>
+    </div>
+    <p class='margin-left'>   History:</p>
+    <ul id="history">
+    </ul>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.3.1/math.min.js"></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
+
